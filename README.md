@@ -1,2 +1,11 @@
-# power-outages-data-investigation
-An investigation into predicting power outage durations with scikit-learn, for Practical Data Science at University of Michigan.
+# Estimating Power Outage Duration With Scikit-Learn and Pandas DataFrames
+
+## Introduction
+
+## Data Cleaning and Exploratory Data Analysis
+
+## Framing a Prediction Problem
+
+## Baseline Model
+
+## Final Model
