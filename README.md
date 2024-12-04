@@ -22,8 +22,8 @@ I started by reading the Excel spreadsheet into a Pandas DataFrame. I read the r
 
 |   YEAR |   MONTH | POSTAL.CODE   | NERC.REGION   | CLIMATE.REGION     |   ANOMALY.LEVEL | CLIMATE.CATEGORY   |
 |-------:|--------:|:--------------|:--------------|:-------------------|----------------:|:-------------------|
-|   2011 |       7 | MN            | MRO           | East North Central |            -0.3 | normal             |nan                     |              3060 |
-|   2014 |       5 | MN            | MRO           | East North Central |            -0.1 | normal             |vandalism               |                 1 |
+|   2011 |       7 | MN            | MRO           | East North Central |            -0.3 | normal             |
+|   2014 |       5 | MN            | MRO           | East North Central |            -0.1 | normal             |
 |   2010 |      10 | MN            | MRO           | East North Central |            -1.5 | cold               |
 |   2012 |       6 | MN            | MRO           | East North Central |            -0.1 | normal             |
 |   2015 |       7 | MN            | MRO           | East North Central |             1.2 | warm               |
