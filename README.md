@@ -21,13 +21,13 @@ The relevant columns of the data are singled out and described below.
 
 I started by reading the Excel spreadsheet into a Pandas DataFrame. I read the raw data, set the correct row indeces and column names, and converted numerical columns from strings to integers and floats. I also converted the start and end time and date columns from strings to timestamp objects. The first few rows of this cleaned DataFrame can be seen below, though most of the columns have been cropped for space. Some rows were missing almost all data (effectively only reporting that an outage occured in a state once), which were dropped due to not providing enough detail to meaningfully impute.
 
-|   YEAR |   MONTH | POSTAL.CODE   | NERC.REGION   | CLIMATE.REGION     |   ANOMALY.LEVEL | CLIMATE.CATEGORY   | OUTAGE.START.DATE   | OUTAGE.START.TIME   | OUTAGE.RESTORATION.DATE   | OUTAGE.RESTORATION.TIME   | CAUSE.CATEGORY     | CAUSE.CATEGORY.DETAIL   |   OUTAGE.DURATION |
-|-------:|--------:|:--------------|:--------------|:-------------------|----------------:|:-------------------|:--------------------|:--------------------|:--------------------------|:--------------------------|:-------------------|:------------------------|------------------:|
-|   2011 |       7 | MN            | MRO           | East North Central |            -0.3 | normal             | 2011-07-01          | 17:00:00            | 2011-07-03                | 20:00:00                  | severe weather     | nan                     |              3060 |
-|   2014 |       5 | MN            | MRO           | East North Central |            -0.1 | normal             | 2014-05-11          | 18:38:00            | 2014-05-11                | 18:39:00                  | intentional attack | vandalism               |                 1 |
-|   2010 |      10 | MN            | MRO           | East North Central |            -1.5 | cold               | 2010-10-26          | 20:00:00            | 2010-10-28                | 22:00:00                  | severe weather     | heavy wind              |              3000 |
-|   2012 |       6 | MN            | MRO           | East North Central |            -0.1 | normal             | 2012-06-19          | 04:30:00            | 2012-06-20                | 23:00:00                  | severe weather     | thunderstorm            |              2550 |
-|   2015 |       7 | MN            | MRO           | East North Central |             1.2 | warm               | 2015-07-18          | 02:00:00            | 2015-07-19                | 07:00:00                  | severe weather     | nan                     |              1740 |
+|   YEAR |   MONTH | POSTAL.CODE   | NERC.REGION   | CLIMATE.REGION     |   ANOMALY.LEVEL | CLIMATE.CATEGORY   |   OUTAGE.DURATION |
+|-------:|--------:|:--------------|:--------------|:-------------------|----------------:|:-------------------|------------------:|
+|   2011 |       7 | MN            | MRO           | East North Central |            -0.3 | normal             | 2011-07-01          | 17:00:00            | severe weather     | nan                     |              3060 |
+|   2014 |       5 | MN            | MRO           | East North Central |            -0.1 | normal             | 2014-05-11          | 18:38:00            | intentional attack | vandalism               |                 1 |
+|   2010 |      10 | MN            | MRO           | East North Central |            -1.5 | cold               | 2010-10-26          | 20:00:00            | severe weather     | heavy wind              |              3000 |
+|   2012 |       6 | MN            | MRO           | East North Central |            -0.1 | normal             | 2012-06-19          | 04:30:00            |              2550 |
+|   2015 |       7 | MN            | MRO           | East North Central |             1.2 | warm               | 2015-07-18          | 02:00:00            |              1740 |
 
 
 ### Univariate Analysis
