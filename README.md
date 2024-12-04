@@ -36,7 +36,8 @@ I started by reading the Excel spreadsheet into a Pandas DataFrame. I read the r
   width="800"
   height="600"
   frameborder="0"
-></iframe>
+>
+</iframe>
 
 While I didn't use the state column directly, I started out by plotting the distribution of outages by state. A handful of states were the sources of a significant portion of the outages. 
 
@@ -45,7 +46,8 @@ While I didn't use the state column directly, I started out by plotting the dist
   width="800"
   height="600"
   frameborder="0"
-></iframe>
+>
+</iframe>
 
 Later, I plotted the average duration of outages by state. This plot looks noticably different from the one above, suggesting outage frequency is unrelated to duration. 
 (I was surprised to see Wisconsin of all states having the highest average; turns out the longest recorded duration for an outage in the data is 75 days, held by one from Wisconsin from 2014. [The state had severe storms that year](https://www.greenbaypressgazette.com/story/news/local/2014/06/30/crews-work-to-restore-power-in-southern-wisconsin/11817885/), so this checks out.)
@@ -57,7 +59,8 @@ Later, I plotted the average duration of outages by state. This plot looks notic
   width="800"
   height="600"
   frameborder="0"
-></iframe>
+>
+</iframe>
 
 This plot shows the distribution of outages based on cause. Many of them ('intentional attack' and 'severe weather in particular') have significant amounts of outliers, which will make prediction difficult.
 
@@ -81,12 +84,15 @@ The table below shows the average duration of outages by NCEI region and overall
 ### Imputation
 
 To deal with missing duration values, I imputed them with the overall median duration (since no relationship was clear between the rows missing values). I chose to use the median over the mean due to how many outliers can be seen in the data. The effect this had on distribution is visible below; the added values end up filling out the curved shape of the distribution.
+
+
 <iframe
   src="assets/distribution.html"
   width="800"
   height="600"
   frameborder="0"
-></iframe>
+>
+</iframe>
 
 
 
